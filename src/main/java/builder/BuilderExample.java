@@ -2,12 +2,10 @@ package builder;
 
 
 import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Value;
 
 @Builder
-@Getter
-@Setter
+@Value
 class Student {
     private String firstName;
     private String lastName;
@@ -18,7 +16,6 @@ public class BuilderExample {
         Student student = Student.builder().firstName("Ranjit").lastName("Shinde").build();
         System.out.println(student);
         student.getFirstName();
-        student.setFirstName("Ranjit2");
         System.out.println(student);
     }
 }
