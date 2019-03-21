@@ -3,12 +3,6 @@ package data;
 
 import lombok.Data;
 
-@Data
-class Student{
-    private final String firstName;
-    private final  String lastName;
-}
-
 public class DataExample {
     public static void main(String[] args) {
 
@@ -20,5 +14,12 @@ public class DataExample {
 
         System.out.println(student.equals(student1));
 
+    }
+
+    private static
+    @Data
+    class Student{
+        private final String firstName;
+        private final  String lastName;
     }
 }

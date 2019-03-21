@@ -1,4 +1,4 @@
-package constructor.hashcode;
+package hashcode;
 
 
 import lombok.EqualsAndHashCode;
